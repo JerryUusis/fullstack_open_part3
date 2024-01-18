@@ -27,8 +27,17 @@ const notes = [
       }
 ]
 
+
 app.get('/api/persons', (request, response) => {
     response.json(notes)
+})
+
+app.get('/info', (request, response) => {
+    const date = new Date().toString();
+    const message = 
+    `<p>The phonebook has info for ${notes.length} people</p>
+    <p>${date}</p>`
+    response.send(message);
 })
 
 const PORT = 3001;
