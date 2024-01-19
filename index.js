@@ -62,7 +62,9 @@ app.delete('/api/persons/:id', (request, response) => {
 
 app.post('/api/persons', (request, response) => {
   const person = request.body;
-  console.log(person);
+  // Creates a random integer between persons length and 30
+  const generateId = Math.floor(Math.random() * (30 - persons.length + 1)) + persons.length;
+  person.id = generateId;
   response.json(person)
 })
 
