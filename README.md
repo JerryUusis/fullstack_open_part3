@@ -5,3 +5,4 @@
 - 3.2: puhelinluettelon backend step3 ✅
 - 3.3: puhelinluettelon backend step3 ✅
 - 3.4: puhelinluettelon backend step4 ✅
+- 3.5: puhelinluettelon backend step5 ✅
