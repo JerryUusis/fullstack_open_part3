@@ -1,10 +1,17 @@
 'use strict'
 
-const { response } = require('express');
 const express = require('express');
+const morgan = require('morgan');
 const app = express();
 
+morgan.token('payload', (request) => {
+  const requestBody = request.body;
+  return JSON.stringify(requestBody)
+})
+
 app.use(express.json())
+app.use(morgan(':method :url :status :res[content-length] - :response-time ms :payload'))
+
 
 const persons = [
   {

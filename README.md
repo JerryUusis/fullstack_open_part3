@@ -13,3 +13,4 @@
 ## [Exercises 3.7-3.8](https://fullstackopen.com/osa3/node_js_ja_express#tehtavat-3-7-3-8)
 
 - 3.7: puhelinluettelon backend step7 ✅
+- 3.8*: puhelinluettelon backend step8 ✅
