@@ -9,3 +9,7 @@
 - 3.4: puhelinluettelon backend step4 ✅
 - 3.5: puhelinluettelon backend step5 ✅
 - 3.6: puhelinluettelon backend step6 ✅
+
+## [Exercises 3.7-3.8](https://fullstackopen.com/osa3/node_js_ja_express#tehtavat-3-7-3-8)
+
+- 3.7: puhelinluettelon backend step7 ✅
