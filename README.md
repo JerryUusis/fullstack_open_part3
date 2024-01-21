@@ -14,3 +14,7 @@
 
 - 3.7: puhelinluettelon backend step7 ✅
 - 3.8*: puhelinluettelon backend step8 ✅
+
+## [Exercises 3.9-3.11](https://fullstackopen.com/osa3/sovellus_internetiin#tehtavat-3-9-3-11)
+
+- 3.9 puhelinluettelon backend step9 ✅

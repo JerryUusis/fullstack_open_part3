@@ -2,6 +2,8 @@
 
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors')
+
 const app = express();
 
 morgan.token('payload', (request) => {
@@ -11,9 +13,10 @@ morgan.token('payload', (request) => {
 
 app.use(express.json())
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :payload'))
+app.use(cors())
 
 
-const persons = [
+let persons = [
   {
     "name": "Arto Hellas",
     "number": "040-123456",
@@ -86,6 +89,7 @@ app.post('/api/persons', (request, response) => {
     })
   }
   else {
+    persons.push(person)
     return response.json(person)
   }
 })
