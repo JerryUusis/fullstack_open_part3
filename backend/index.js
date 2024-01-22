@@ -14,6 +14,8 @@ morgan.token('payload', (request) => {
 app.use(express.json())
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :payload'))
 app.use(cors())
+// Used to serve static files in express. Check documentation: https://expressjs.com/en/starter/static-files.html
+app.use(express.static('dist'))
 
 
 let persons = [
