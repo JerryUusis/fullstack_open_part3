@@ -18,3 +18,7 @@
 ## [Exercises 3.9-3.11](https://fullstackopen.com/osa3/sovellus_internetiin#tehtavat-3-9-3-11)
 
 - 3.9 puhelinluettelon backend step9 ✅
+- 3.10 puhelinluettelon backend step10 ✅
+- 3.11 puhelinluettelon backend step11 ✅
+
+Application running in URL: https://test-omwn.onrender.com/
