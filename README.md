@@ -30,3 +30,6 @@ Application running in URL: https://test-omwn.onrender.com/
 - 3.13: puhelinluettelo ja tietokanta, step1 ✅
 - 3.14: puhelinluettelo ja tietokanta, step2 ✅
 - 3.15: puhelinluettelo ja tietokanta, step3 ✅
+- 3.16: puhelinluettelo ja tietokanta, step4 ✅
+- 3.17*: puhelinluettelo ja tietokanta, step5 ✅
+

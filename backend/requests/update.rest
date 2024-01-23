@@ -1,0 +1,8 @@
+PUT http://localhost:3001/api/persons/65aeccac53d896ffe6ccfa5e
+Content-Type: application/json
+
+{
+    "name":"Santtu Timonen",
+    "number": "321 456 666",
+    "id":"65aeccac53d896ffe6ccfa5e"
+}
