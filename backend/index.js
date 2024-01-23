@@ -56,27 +56,22 @@ app.delete('/api/persons/:id', (request, response) => {
 })
 
 app.post('/api/persons', (request, response) => {
-  const person = request.body;
-  // Creates a random integer between persons length and 30
-  const generateId = Math.floor(Math.random() * (30 - persons.length + 1)) + persons.length;
-  person.id = generateId;
+  const body = request.body;
 
-  const nameExists = persons.some(person => person.name === request.body.name)
-
-  if (!person.name || !person.number) {
+  if (!body.name || !body.number) {
     return response.status(404).json({
       error: 'missing name or numbber'
     })
   }
-  if (nameExists) {
-    return response.status(404).json({
-      error: 'name already exists in phonebook'
-    })
-  }
-  else {
-    persons.push(person)
-    return response.json(person)
-  }
+
+  const person = new Person({
+    name: body.name,
+    number: body.number
+  })
+
+  person.save().then(savedPersonData => {
+    response.json(savedPersonData)
+  })
 })
 
 const PORT = process.env.PORT;
