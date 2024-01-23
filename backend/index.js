@@ -27,12 +27,18 @@ app.get('/api/persons', (request, response) => {
   })
 })
 
-app.get('/info', (request, response) => {
+app.get('/info', (request, response, next) => {
   const date = new Date().toString();
-  const message =
-    `<p>The phonebook has info for ${persons.length} people</p>
-    <p>${date}</p>`
-  response.send(message);
+
+  Person.find({})
+    .then(people => {
+      const phoneBookLength = people.length
+      const message =
+        `<p>The phonebook has info for ${phoneBookLength} people</p>
+        <p>${date}</p>`
+        response.send(message);
+    })
+    .catch(error => next(error))
 })
 
 app.get('/api/persons/:id', (request, response, next) => {
