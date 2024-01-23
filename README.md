@@ -29,3 +29,4 @@ Application running in URL: https://test-omwn.onrender.com/
 ## [Tehtävät 3.13.-3.14](https://fullstackopen.com/osa3/tietojen_tallettaminen_mongo_db_tietokantaan#tehtavat-3-13-3-14)
 - 3.13: puhelinluettelo ja tietokanta, step1 ✅
 - 3.14: puhelinluettelo ja tietokanta, step2 ✅
+- 3.15: puhelinluettelo ja tietokanta, step3 ✅
