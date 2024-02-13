@@ -18,9 +18,18 @@ const personSchema = new mongoose.Schema({
   name: {
     type: String,
     minlength: 3,
-    required: true
+    required: true,
   },
-  number: String,
+  number: {
+    type: String,
+    minlength: 8,
+    validate: {
+      validator: function (number) {
+       return /\d{2}-\d{7}/.test(number) || /\d{3}-\d{8}/.test(number); // always use return to check if validation succeeded or not
+      },
+      message: "Invalid format"
+    },
+  },
 });
 
 // Exclude __v and _id from output
