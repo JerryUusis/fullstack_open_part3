@@ -87,6 +87,14 @@ function App() {
             setErrorMesage(null)
           }, 3000)
         })
+        .catch(error => {
+          console.log(error)
+          setNotificationType('error')
+          setErrorMesage(`Error: ${error.response.data.error}`)
+          setTimeout(()=> {
+            setErrorMesage(null)
+          }, 3000)
+        })
     }
   }
 
