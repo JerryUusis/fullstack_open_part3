@@ -36,4 +36,5 @@ Application running in URL: https://test-omwn.onrender.com/
 - 3.19: puhelinluettelo ja tietokanta, step7 ✅
 - 3.20*: puhelinluettelo ja tietokanta, step8 ✅
 - 3.21: tietokantaa käyttävä versio Internetiin, step8 ✅
+- 3.22: lint-konfiguraatio
 
